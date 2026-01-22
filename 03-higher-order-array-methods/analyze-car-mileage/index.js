@@ -13,7 +13,7 @@ const analyzeCarMileage = (carsInfo) => {
   );
 
   return {
-    averageMileage,
+    averageMileage: parseFloat(averageMileage.toFixed(2)),
     totalMilege,
     highestMileage: highestMileageCar,
     lowestMileage: lowestMileageCar,

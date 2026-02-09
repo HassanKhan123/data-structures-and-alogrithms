@@ -1,4 +1,4 @@
-const wordFrequencyCounter = (str) => {
+const wordFrequencyCounter = (str, word) => {
   const wordMap = new Map();
 
   const words = str.toLowerCase().split(/\W+/);
@@ -11,8 +11,11 @@ const wordFrequencyCounter = (str) => {
     }
   }
 
-  return wordMap;
+  return wordMap.get(word);
 };
 
-const res = wordFrequencyCounter("The quick brown fox jumps over the lazy dog");
+const res = wordFrequencyCounter(
+  "The quick brown fox jumps over the lazy dog",
+  "the",
+);
 console.log(res);

@@ -1,4 +1,4 @@
-class Stack {
+export class Stack {
   constructor() {
     this.maxSize = 100;
     this.stack = [];
@@ -39,11 +39,3 @@ class Stack {
     return this.top === -1;
   }
 }
-
-const stack = new Stack();
-stack.push(100);
-stack.push(200);
-stack.push(300);
-console.log(stack.peek());
-
-console.log(stack);

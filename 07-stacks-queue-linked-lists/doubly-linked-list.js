@@ -136,9 +136,6 @@ list.prepend(1);
 
 list.insertAt(2, "new");
 
-// console.log(list.get(0).data);
+console.log(list.get(0).data);
 list.remove(2);
 list.printAll();
-
-console.log(list.contains(7));
-console.log(list.contains(2));

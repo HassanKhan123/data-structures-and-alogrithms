@@ -4,7 +4,7 @@ function Node(data) {
   this.prev = null;
 }
 
-function DoublyLinkedList() {
+export function DoublyLinkedList() {
   this.head = null;
   this.tail = null;
   this.length = 0;
